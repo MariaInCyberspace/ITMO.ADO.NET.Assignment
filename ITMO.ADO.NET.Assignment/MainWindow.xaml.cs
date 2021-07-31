@@ -153,6 +153,7 @@ namespace ITMO.ADO.NET.Assignment
 
                 addNewCustomerGrid.Visibility = Visibility.Collapsed;
                 customersGrid.Visibility = Visibility.Visible;
+                ordersDataGrid.Visibility = Visibility.Visible;
             }
             else if (addNewOrderGrid.Visibility == Visibility.Visible)
             {
@@ -219,6 +220,7 @@ namespace ITMO.ADO.NET.Assignment
                     ordersViewSource.View.Refresh();
                     addNewOrderGrid.Visibility = Visibility.Collapsed;
                     customersGrid.Visibility = Visibility.Visible;
+                    ordersDataGrid.Visibility = Visibility.Visible;
                 }
                 catch (FormatException ex)
                 {
